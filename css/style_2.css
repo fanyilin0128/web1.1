@@ -1,0 +1,34 @@
+.num0{
+	font-size:12px;
+	font-family:Arial;
+	line-height: 2em;
+	color:#808080;
+}
+.num0 a{
+	color: #808080;
+}
+a:link{
+	color: #727272;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.cap{
+	font-size: 14px; 
+	color:#b9f605;
+	font-weight: 800;
+}
+.cap a{
+	color: white;
+}
+.cap a:hover{
+	color: #b9f605;
+	text-decoration: none;
+}
+#fal{
+	color:#fdb306;
+}
+ul.num7{
+	list-style-type: none;
+}
