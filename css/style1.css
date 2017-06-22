@@ -1,0 +1,146 @@
+*{
+	color: #444;
+	margin:0;
+	padding: 0;
+}
+* a{
+	text-decoration: none;
+}
+* a:hover{
+	text-decoration: none;
+	color: blue;
+}
+body{
+	background:url(../images/backgroundpic.jpg);
+}
+#header{
+	background: url(../images/banner.jpg);
+	background-repeat: repeat-x;
+	height: 280px;
+}
+#banner img{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	top: 70px;
+	left: 100px;
+	opacity: 0.7;
+}
+.nav_content{
+	float: left;
+}
+.nav_content ul li a:hover{
+	color:#800000;
+}
+.nav_search{
+	float: left;
+	margin-top: 5px;
+}
+.nav_content ul li{
+	float: left;
+	list-style-type: none;
+}
+.nav_content ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #f33;
+}
+#nav{
+	height: 40px;
+	position: relative;
+	top: 120px;
+	width: 100%;
+	background-color: #ffb7dd;
+}
+#content{
+	width: 1000px;
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+#content_left{
+	margin:2px;
+	width: 450px;
+	float: left;
+}
+#content_left ul li a:hover{
+	color: #f51;
+	text-decoration: none;
+}
+#content_left ul li{
+	line-height: 1.5em;
+}
+.pic{
+	background: url(../images/pic.jpg);
+	height: 35px;
+}
+span{
+	font-size: 20px;
+	font-weight: 550;
+	color: #40c;
+}
+#content_right{
+	float: left;
+	margin-top: 10px;
+}
+.pic_fengjing{
+	float: left;
+	padding-left: 5px;`
+}
+.denglu{
+	float: right;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+.pic_fengjing img{
+	height: 250px;
+	width: 300px;
+}
+#content_buttom{
+	float:left; 
+}
+.content2 ul li a:hover{
+	color: #f51;
+	text-decoration: none;
+}
+.pic2{
+	float: left;
+	padding-right: 10px;
+}
+.content2{
+	float: left;
+	width: 530px;
+}
+.content2 ul li{
+	list-style-position: inside;
+	line-height: 1.5em;
+}
+.pic2 img{
+	height: 300px;
+	width: 450px;
+}
+#footer{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.footer1{
+	padding-left: 400px;
+}
+#footer ul li{
+	float: left;
+	list-style-type: none;
+}
+#footer ul li a{
+	text-decoration: none;
+	font-size: 12px;
+}
+.footer2{
+	width: 300px;
+}
+.banquan{
+	font-size: 10px;
+	margin-left: 500px;
+}
