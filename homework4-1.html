@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		body{
+			font:bolder 26px;
+		}
+		table,td{border:1px solid gray;}
+		td{padding: 10px;}
+		button{
+			width: 50px;
+			height: 50px;
+		}
+		#result{
+			text-align: right;
+			width: 200px;
+			height: 50px;
+		}
+	</style>
+	<script type="text/javascript" src="js/homework4-1.js"></script>
+</head>
+<body>
+	<table> 
+		<tr> 
+			<td colspan="3" id="result">0</td> 
+			<td><button type="button" value="C" onclick="clearData()">C</button></td> 
+		</tr> 
+		<tr> 
+			<td><button type="button" value="1" onclick="showData(1)">1</button></td> 
+			<td><button type="button" value="2" onclick="showData(2)">2</button></td> 
+			<td><button type="button" value="3" onclick="showData(3)">3</button></td> 
+			<td><button type="button" value="+" onclick="showData('+')">+</button></td> 
+		</tr> 
+		<tr> 
+			<td><button type="button" value="4" onclick="showData(4)">4</button></td> 
+			<td><button type="button" value="5" onclick="showData(5)">5</button></td> 
+			<td><button type="button" value="6" onclick="showData(6)">6</button></td> 
+			<td><button type="button" value="-" onclick="showData('-')">-</button></td> 
+		</tr> 
+		<tr> 
+			<td><button type="button" value="7" onclick="showData(7)">7</button></td> 
+			<td><button type="button" value="8" onclick="showData(8)">8</button></td> 
+			<td><button type="button" value="9" onclick="showData(9)">9</button></td> 
+			<td><button type="button" value="*" onclick="showData('*')">*</button></td> 
+		</tr> 
+		<tr> 
+			<td><button type="button" value="0" onclick="showData(0)">0</button></td> 
+			<td><button type="button" value="." onclick="showData('.')">.</button></td> 
+			<td><button type="button" value="=" onclick="calculate()">=</button></td> 
+			<td><button type="button" value="/" onclick="showData('/')">/</button></td> 
+		</tr> 
+	</table>
+
+</body>
+
+</html>
