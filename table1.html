@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+		
+	</style>
+</head>
+<body>
+	<table width="1000px" border="1" id="tb">
+		<tr class="First" height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="addtr()" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="deletetr()" />
+</body>
+<script type="text/javascript">
+	function addtr(){
+		var row=document.createElement("tr");
+		document.getElementById("tb").appendChild(row);
+		for(var i=0;i<12;i++)
+		{
+			var col=document.createElement("td");
+			row.appendChild(col);
+		}
+		row.onmouseover=function(){
+			row.style.backgroundColor='yellow';
+		}
+		row.onmouseout=function(){
+			row.style.backgroundColor="";
+		}
+	}
+	function deletetr(){
+		var row=document.getElementById("tb").lastChild;
+		for(var i=0;i<row.length;i++)
+		{
+			var col=row.firstChild;
+			row.removeChild(col);
+		}
+		tb.removeChild(row);
+	}
+	var firstrow=document.getElementsByClassName('First')[0];
+	firstrow.onmouseover=function(){
+			firstrow.style.backgroundColor='yellow';
+	}
+	firstrow.onmouseout=function(){
+		firstrow.style.backgroundColor="";
+	}
+	
+	
+</script>
+</html>
