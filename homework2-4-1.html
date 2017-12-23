@@ -8,9 +8,9 @@
 		$().ready(function(){
 			var t1=false,t2=false,t3=false;
 			var userName=$('input[name="username"]');
+			var $error=$('<span>用户名不能为空</span>');
 			$(userName).blur(function(){
 				if(userName.val()==""){
-					var $error=$('<span>用户名不能为空</span>');
 					$("td:eq(1)").append($error);
 					t1=true;
 				}	
@@ -18,13 +18,14 @@
 			$(userName).click(function(){
 				if(t1)
 				{
-					$('span').remove();
+					$($error).remove();
+					t1=false;
 				}
 			})
 			var pswd1=$('input[name="password1"]');
+			var $error1=$('<span>密码不能为空</span>');
 			$(pswd1).blur(function(){
 				if(pswd1.val()==""){
-					var $error1=$('<span>密码不能为空</span>');
 					$("td:eq(3)").append($error1);
 					t2=true;
 				}
@@ -32,13 +33,14 @@
 			$(pswd1).click(function(){
 				if(t2)
 				{
-					$('span').remove();
+					$($error1).remove();
+					t2=false;
 				}
 			})
 			var pswd2=$('input[name="password2"]');
+			var $error2=$('<span>两次密码不相同</span>');
 			$(pswd2).blur(function(){
-				if(pswd1.val()!=pswd2.val()){
-					var $error2=$('<span>两次密码不相同</span>');
+				if(pswd1.val()!=pswd2.val()){	
 					$("td:eq(5)").append($error2);
 					t3=true;
 				}
@@ -46,7 +48,8 @@
 			$(pswd2).click(function(){
 				if(t3)
 				{
-					$('span').remove();
+					$($error2).remove();
+					t3=false;
 				}
 			})
 		});
