@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户注册</title>
+	<meta charset="utf-8"/>
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript">
+		$().ready(function(){
+			var t1=false,t2=false,t3=false;
+			var userName=$('input[name="username"]');
+			$(userName).blur(function(){
+				if(userName.val()==""){
+					var $error=$('<span>用户名不能为空</span>');
+					$("td:eq(1)").append($error);
+					t1=true;
+				}	
+			})
+			$(userName).click(function(){
+				if(t1)
+				{
+					$('span').remove();
+				}
+			})
+			var pswd1=$('input[name="password1"]');
+			$(pswd1).blur(function(){
+				if(pswd1.val()==""){
+					var $error1=$('<span>密码不能为空</span>');
+					$("td:eq(3)").append($error1);
+					t2=true;
+				}
+			})
+			$(pswd1).click(function(){
+				if(t2)
+				{
+					$('span').remove();
+				}
+			})
+			var pswd2=$('input[name="password2"]');
+			$(pswd2).blur(function(){
+				if(pswd1.val()!=pswd2.val()){
+					var $error2=$('<span>两次密码不相同</span>');
+					$("td:eq(5)").append($error2);
+					t3=true;
+				}
+			})
+			$(pswd2).click(function(){
+				if(t3)
+				{
+					$('span').remove();
+				}
+			})
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="password1"></td>
+			</tr>
+			<tr>
+				<td>确认密码：</td>
+				<td><input type="password" name="password2"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="注册"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
